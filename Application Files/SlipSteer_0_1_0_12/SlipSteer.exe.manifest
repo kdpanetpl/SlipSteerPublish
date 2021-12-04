@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SlipSteer.exe" version="0.1.0.12" publicKeyToken="2cd513fc9286ae68" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="fire-wheel.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SlipSteer" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SlipSteer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SlipSteer.exe" size="1161688">
+      <assemblyIdentity name="SlipSteer" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>brTYOuZjBo5NpRJESDhPZHet70ksvSYRwyUupM14cfw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="fire-wheel.ico" size="360414">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DGUUcjPKJNl2jTEWoWfIw0OvD/X70mQwZs3zwssi1EY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SlipSteer.exe.config" size="1299">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A72qNfWJySDxrMXbPO4YhtGVnp+zl+PGK05Cw2lYZ6s=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-LFVUHHA\qqq" issuerKeyHash="969ce9890121e158701cc82fda3277579494d6fa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xa61AwHVDNBShSSsCTmp0qtessweW6VG87X7ad54F/c=</DigestValue></Reference></SignedInfo><SignatureValue>q9mOBjZqg4ucGItqaiNXDXPhR71o2eMnWTAbb4ZwhxQf5z6yf53ON+Hoscf3fcDy4dwnK378txZweKnNH+0Bjiu6lGAUIwrsZ/iznC4duww2KeKRm7XY/pqHFUNEjMzPDHFcnAStA9mNTEWl1t8trxJCzH3aBf54pgLm3RPe27A=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yoHGPgO6GH/r/qjdASLQI2JtZI1/O3L6ho07uywnGpEvnrLEpu3wAqqn4+yHPh0peYAswggLImwe7FmQ0EtZTfmVSC5h5Q6dEWFhEL9o6Vz+ypemWmqvcRv1DhWRqYpiUw7qtG3wmYKZypsy9i4y3J2mosaG0bzYURwVx76iah0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f71778de69fbb5f346a55b1eccb25eabd2a93909ac248552d00cd50103b5aec5" Description="" Url=""><as:assemblyIdentity name="SlipSteer.exe" version="0.1.0.12" publicKeyToken="2cd513fc9286ae68" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-LFVUHHA\qqq</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>u+74+PTpRXO9L3QxVzvDZybv69HIpUZ4GvnaNsRcDwQ=</DigestValue></Reference></SignedInfo><SignatureValue>RPWrrkiwXuXFzd5HDUDYVW6z8DW4Jm8FoyPo+PMAUIg5KkYMc9pGCfNwzgPyI7s6G3a6rArkwjvrfA+kIVaiRq+zvWfb50uPt9qWQQrh86a/1eeHhB1HuDjD4+EGzsrhcWHkO1RSD9Ago6YlGHHC+TPFu0M4khLwCFFjpzBuo2w=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yoHGPgO6GH/r/qjdASLQI2JtZI1/O3L6ho07uywnGpEvnrLEpu3wAqqn4+yHPh0peYAswggLImwe7FmQ0EtZTfmVSC5h5Q6dEWFhEL9o6Vz+ypemWmqvcRv1DhWRqYpiUw7qtG3wmYKZypsy9i4y3J2mosaG0bzYURwVx76iah0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQK/5oDFwy6atK1fYxH4AhlDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEwARgBWAFUASABIAEEAXABxAHEAcTAeFw0yMTExMjQxNjMzMjlaFw0yMjExMjQyMjMzMjlaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ATABGAFYAVQBIAEgAQQBcAHEAcQBxMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKgcY+A7oYf+v+qN0BItAjYm1kjX87cvqGjTu7LCcakS+essSm7fACqqfj7Ic+HSl5gCzCCAsibB7sWZDQS1lN+ZVILmHlDp0RYWEQv2jpXP7Kl6Zaaq9xG/UOFZGpimJTDuq0bfCZgpnKmzL2LjLcnaaixobRvNhRHBXHvqJqHQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAB7DK9y1n+9juh2T3FNN/GpyXshJIh2nF1mPSYA9p4ikGoItmWrJyPFMsMSw7SK/HHjo8gJqCGyFoG9XgAkTX0B5o7PIr4DICoKEmg7N++ZPDepGc285Soj6w8d4mSX51CPbN9Dnzxv0V+bs66bvUmrcLIjsC/C3KqIbtvnqg4VT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
